@@ -27,7 +27,7 @@ serie_trafico_gijon_postcovid <- window(serie_trafico_gijon, start = c(2020, 299
 autoplot(serie_trafico_gijon_postcovid) + theme_bw() #postcovid
 
 valores_atipicos_trafico <- which(media_coches_dia < 500)
-valores_atipicos_1 <- movility_gijon$date[outliers_trafico]
+valores_atipicos_1 <- movility_gijon$date[valores_atipicos_trafico]
 valores_atipicos_1
 #Vemos que estos outliers coinciden en su mayoría con la época covid, y los que no,  por ejemplo los de 2022 muchos de ellos
 #se dan en julio y principios de septimebre época en la que la gente tiende a irse de vacaciones
